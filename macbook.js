@@ -21,6 +21,9 @@ function phoneProduct() {
 function lapTops() {
    window.location.href = "laptop.html"
  }
+ function nowAvail() {
+  window.location.href = "index.html"
+}
 //  samsung
 function samSung() {
    window.location.href = "samSung.html"

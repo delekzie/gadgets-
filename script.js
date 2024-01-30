@@ -1,3 +1,18 @@
+
+
+$(document).ready(function () {
+  $(".nav-toggler").each(function (_, navToggler) {
+    var target = $(navToggler).data("target");
+    $(navToggler).on("click", function () {
+      $(target).animate({
+        height: "toggle",
+      });
+    });
+  });
+});
+
+
+
 // iphone
 function phoneProduct() {
     window.location.href = "iphone.html"
@@ -18,6 +33,7 @@ function phoneProduct() {
 function lapTops() {
    window.location.href = "laptop.html"
  }
+
 //  samsung
 function samSung() {
    window.location.href = "samSung.html"
@@ -34,3 +50,4 @@ function menuBtn(e){
 
   e.name === "menu-outline" ? (e.name = "close",list.classList.add('top-[80px]'),list.classList.add('opacity-100')) : ( e.name = "menu-outline",list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'));
 }
+

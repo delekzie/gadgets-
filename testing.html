@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js"></script>
+<script src="jquery.min.js"></script>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<script>
+  tailwind.config = {
+    theme: {
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
+      },
+      extend: {
+        colors: {
+          brightRed: "hsl(12, 88%, 59%)",
+          brightRedLight: "hsl(12, 88%, 69%)",
+          Blue: "hsl(210, 78%, 56%)",
+          goldenYellow: "#F5A201",
+          DullBlue: "#0A223C",
+          Deepblue: "#264653",
+          brightGold: "#F5C412",
+          sky: "#082f49",
+          coral: "#C99D9A",
+          lightgreen: "#A5DAD4",
+          ash: "#8694AB",
+        },
+      },
+    },
+  };
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<body class="bg-gray-50">
+    <nav class="flex items-center bg-sky flex-wrap p-3">
+     <a href="">
+        <h1 class="text-3xl cursor-pointer text-white">
+            <span class="font-bold content-center">Twel</span
+            ><span class="text-goldenYellow font-extralight">ve.</span
+            ><span class="text-xs font-bold">02</span>
+          </h1>
+     </a>
+
+     <button class="inline-flex text-white hover:bg-gray-900 rounded lg:hidden  ml-auto nav-toggler" data-target="#navigation">
+        <ion-icon name="menu-outline" class=" p-3 text-4xl cursor-pointer"></ion-icon>
+     </button>
+       
+        <div class="hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+            <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col ">
+                <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white text-sm hover:bg-gray-900"><span onclick="nowAvail()">Now Avaliable</span></a>
+                <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white text-sm hover:bg-gray-900"><span onclick="phoneProduct()">iPhone</span></a>
+                <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white text-sm hover:bg-gray-900"><span onclick="ipadProduct()">iPad</span></a>
+                <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white text-sm hover:bg-gray-900"><span onclick="macBook()">Macbooks</span></a>
+                <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white text-sm hover:bg-gray-900"><span onclick="appleProduct()">Accessories</span></a>
+                <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white text-sm hover:bg-gray-900"><span onclick="samSung()">Samsung</span></a>
+                <a href="#" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white text-sm hover:bg-gray-900"><span onclick="lapTops()">Laptops</span></a>
+                <a href="#service" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white text-sm hover:bg-gray-900"><span>Services</span></a>
+                <a href=""class="lg:inline-flex lg:w-auto px-3"><span><button
+                    class="h-10 px-5 text-xs cursor-pointer rounded-md border border-sky text-sky font-semibold bg-goldenYellow hover:bg-white hover:text-black my-4 md:my-0"
+                    type="button">Become a Seller</button></span></a>
+
+                    <a href="#" class="lg:inline-flex lg:w-auto px-3">
+                        <button  onclick="showCarts()" class="flex mx-4 my-6 md:my-0 cursor-pointer">
+                            <i class="fa-solid fa-cart-shopping text-xl text-white"></i>
+                            <div class="label font-extrabold" id="cartNo" style="width: 12px; height:12px; border-radius:50%;color:white; text-align:center;"></div>
+                          </button>
+                    </a>
+            </div>
+        </div>
+        
+     
+       
+    </nav>
+   
+</body>   
+</html>
+

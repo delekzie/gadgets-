@@ -47,69 +47,44 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <body class="bg-gray-50">
 
-    <section class="bg-sky text-white">
-         <div class="mx-6 md:flex md:items-center md:justify-between p-3">
-            <div class="flex justify-between items-center">
-              <h1 class="text-3xl cursor-pointer">
-                <span class="font-bold content-center">Twel</span
-                ><span class="text-goldenYellow font-extralight">ve.</span
-                ><span class="text-xs font-bold">02</span>
-              </h1>
-              <span>
-                <ion-icon name="menu-outline" class=" ml-3 text-4xl cursor-pointer md:hidden" onclick="menuBtn(this )"></ion-icon>
-              </span>
-            </div>
-
-            <ul class="md:flex md:items-center text-xs font-semi-bold z-[-1] md:z-auto md:static  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-duration-500">
-
-              <li class="mx-4 my-6 md:my-0 cursor-pointer" type="button" onclick="nowAvail()">
-                Now Available <span> <i class="arrow down"></i></span>
-              </li>
-          
-              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="phoneProduct()">
-                iPhone <span> <i class="arrow down"></i></span>
-              </li>
-          
-              <li class="cursor-pointer mx-4 my-6 md:my-0" onclick="ipadProduct()">
-                iPad <span> <i class="arrow down"></i></span>
-              </li>
+  <section class="bg-sky text-white">
+    <nav class="flex items-center bg-sky flex-wrap p-3">
+      <a href="" class="mx-6">
+         <h1 class="text-3xl cursor-pointer text-white">
+             <span class="font-bold content-center">Twel</span
+             ><span class="text-goldenYellow font-extralight">ve.</span
+             ><span class="text-xs font-bold">02</span>
+           </h1>
+      </a>
+ 
+      <button class="inline-flex text-white hover:bg-gray-900 rounded lg:hidden  ml-auto nav-toggler" data-target="#navigation">
+         <ion-icon name="menu-outline" class=" p-3 text-4xl cursor-pointer"></ion-icon>
+      </button>
         
-          
-              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="appleProduct()">
-                AirPods & Apple Watch <span><i class="arrow down"></i></span>
-              </li>
-    
-              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="macBook()">
-                Mac Books<span> <i class="arrow down"></i></span>
-              </li>
-           
-              <li class="mx-4 cursor-pointer my-6 md:my-0" onclick="samSung()">
-                Samsung <span> <i class="arrow down"></i></span>
-              </li>
-            
-              <li class="mx-4 cursor-pointer my-6 md:my-0" onclick="lapTops()">
-                Laptops <span> <i class="arrow down"></i></span>
-              </li>
-        
-              <li class="mx-4 cursor-pointer my-6 md:my-0">
-                <a href="#service">
-                  Services <span> <i class="arrow down"></i></span>
-                </a>
-              </li>
-
-              <button
-                class=" mx-4 h-10 px-5 text-xs cursor-pointer rounded-md border border-sky text-sky font-semibold bg-goldenYellow hover:bg-white hover:text-black my-4 md:my-0"
-                type="button">
-                Become a Seller
-              </button>
-
-              <button  onclick="showCarts()" class="flex mx-4 my-6 md:my-0 cursor-pointer">
-                <i class="fa-solid fa-cart-shopping text-xl text-white"></i>
-                <div class="label font-extrabold" id="cartNo" style="width: 12px; height:12px; border-radius:50%;color:white; text-align:center;"></div>
-              </button>
-         </ul>
-      </div>
-   </section>
+         <div class="hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+             <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col ">
+                 <a href="#" class="lg:inline-flex lg:w-auto px-4 py-2 rounded text-white text-xs hover:bg-gray-900"><span onclick="nowAvail()">Now Avaliable</span><span> <i class="arrow down"></i></span></a>
+                 <a href="#" class="lg:inline-flex lg:w-auto px-4 py-2 rounded text-white text-xs hover:bg-gray-900"><span onclick="phoneProduct()">iPhone</span><span> <i class="arrow down"></i></span></a>
+                 <a href="#" class="lg:inline-flex lg:w-auto px-4 py-2 rounded text-white text-xs hover:bg-gray-900"><span onclick="ipadProduct()">iPad</span><span> <i class="arrow down"></i></span></a>
+                 <a href="#" class="lg:inline-flex lg:w-auto px-4 py-2 rounded text-white text-xs hover:bg-gray-900"><span onclick="macBook()">Macbooks</span><span> <i class="arrow down"></i></span></a>
+                 <a href="#" class="lg:inline-flex lg:w-auto px-4 py-2 rounded text-white text-xs hover:bg-gray-900"><span onclick="appleProduct()">Accessories</span><span> <i class="arrow down"></i></span></a>
+                 <a href="#" class="lg:inline-flex lg:w-auto px-4 py-2 rounded text-white text-xs hover:bg-gray-900"><span onclick="samSung()">Samsung</span><span> <i class="arrow down"></i></span></a>
+                 <a href="#" class="lg:inline-flex lg:w-auto px-4 py-2 rounded text-white text-xs hover:bg-gray-900"><span onclick="lapTops()">Laptops</span><span> <i class="arrow down"></i></span></a>
+                 <a href="#service" class="lg:inline-flex lg:w-auto px-5 py-2 rounded text-white text-xs hover:bg-gray-900"><span>Services</span><span> <i class="arrow down"></i></span></a>
+                 <a href=""class="lg:inline-flex lg:w-auto px-4"><span><button
+                     class="h-8 px-5 text-xs cursor-pointer rounded-md border border-sky text-sky font-semibold bg-goldenYellow hover:bg-white hover:text-black "
+                     type="button">Become a Seller</button></span></a>
+ 
+                     <a href="#" class="lg:inline-flex lg:w-auto px-4">
+                         <button  onclick="showCarts()" class="flex cursor-pointer">
+                             <i class="fa-solid fa-cart-shopping text-xl text-white"></i>
+                             <div class="label text-xs font-extrabold" id="cartNo" style="width: 12px; height:12px; border-radius:50%;color:white; text-align:center;"></div>
+                           </button>
+                     </a>
+             </div>
+         </div>
+     </nav>
+ </section>
 
 <body>
 
@@ -176,9 +151,18 @@
   </section>
 </body>
 </html>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous">
+</script>
+<script src="/project/script.js"></script>
+
+
 
 <script>
-
+  function nowAvail() {
+    window.location.href = "index.html"
+  }
   // iphone
 function phoneProduct() {
   window.location.href = "iphone.html"
@@ -251,9 +235,6 @@ function menuBtn (e){
 
   
 
-      <!-- disp.innerHTML += `<div>
-      <h1 class="text-lg">Total : $ ${itemGotten.reduce((acc, item) => acc + parseInt(item.price), 0)}.00</h1>
-      </div>}` -->
-
+  
 
     

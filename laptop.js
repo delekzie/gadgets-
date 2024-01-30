@@ -2,6 +2,9 @@
 function phoneProduct() {
     window.location.href = "iphone.html"
  }
+ function nowAvail() {
+    window.location.href = "index.html"
+  }
 // airpod
  function appleProduct() {
    window.location.href = "airpod.html"
