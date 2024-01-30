@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<script>
+  tailwind.config = {
+    theme: {
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
+      },
+      extend: {
+        colors: {
+          brightRed: "hsl(12, 88%, 59%)",
+          brightRedLight: "hsl(12, 88%, 69%)",
+          Blue: "hsl(210, 78%, 56%)",
+          goldenYellow: "#F5A201",
+          DullBlue: "#0A223C",
+          Deepblue: "#264653",
+          brightGold: "#F5C412",
+          sky: "#082f49",
+          coral: "#C99D9A",
+          lightgreen: "#A5DAD4",
+          ash: "#8694AB",
+        },
+      },
+    },
+  };
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<body class="bg-gray-50">
+
+    <section class="bg-sky text-white">
+         <div class="mx-6 md:flex md:items-center md:justify-between p-3">
+            <div class="flex justify-between items-center">
+              <h1 class="text-3xl cursor-pointer">
+                <span class="font-bold content-center">Twel</span
+                ><span class="text-goldenYellow font-extralight">ve.</span
+                ><span class="text-xs font-bold">02</span>
+              </h1>
+              <span>
+                <ion-icon name="menu-outline" class=" ml-3 text-4xl cursor-pointer md:hidden" onclick="menuBtn(this )"></ion-icon>
+              </span>
+            </div>
+
+            <ul class="md:flex md:items-center text-xs font-semi-bold z-[-1] md:z-auto md:static  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-duration-500">
+
+              <li class="mx-4 my-6 md:my-0 cursor-pointer" type="button" onclick="nowAvail()">
+                Now Available <span> <i class="arrow down"></i></span>
+              </li>
+          
+              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="phoneProduct()">
+                iPhone <span> <i class="arrow down"></i></span>
+              </li>
+          
+              <li class="cursor-pointer mx-4 my-6 md:my-0" onclick="ipadProduct()">
+                iPad <span> <i class="arrow down"></i></span>
+              </li>
+        
+          
+              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="appleProduct()">
+                AirPods & Apple Watch <span><i class="arrow down"></i></span>
+              </li>
+    
+              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="macBook()">
+                Mac Books<span> <i class="arrow down"></i></span>
+              </li>
+           
+              <li class="mx-4 cursor-pointer my-6 md:my-0" onclick="samSung()">
+                Samsung <span> <i class="arrow down"></i></span>
+              </li>
+            
+              <li class="mx-4 cursor-pointer my-6 md:my-0" onclick="lapTops()">
+                Laptops <span> <i class="arrow down"></i></span>
+              </li>
+        
+              <li class="mx-4 cursor-pointer my-6 md:my-0">
+                <a href="#service">
+                  Services <span> <i class="arrow down"></i></span>
+                </a>
+              </li>
+
+              <button
+                class=" mx-4 h-10 px-5 text-xs cursor-pointer rounded-md border border-sky text-sky font-semibold bg-goldenYellow hover:bg-white hover:text-black my-4 md:my-0"
+                type="button">
+                Become a Seller
+              </button>
+
+              <button  onclick="showCarts()" class="flex mx-4 my-6 md:my-0 cursor-pointer">
+                <i class="fa-solid fa-cart-shopping text-xl text-white"></i>
+                <div class="label font-extrabold" id="cartNo" style="width: 12px; height:12px; border-radius:50%;color:white; text-align:center;"></div>
+              </button>
+         </ul>
+      </div>
+   </section>
+
+<body>
+
+    <div class="mx-auto md:flex justify-evenly">
+      <div class="mt-2 text-center">
+        <h1 class="text-3xl cursor-pointer">
+          <span class="font-bold content-center">Twel</span
+          ><span class="text-goldenYellow font-extralight">ve.</span
+          ><span class="text-xs font-bold">02</span>
+          <span class="font-bold content-center">Gad</span
+            ><span class="text-goldenYellow font-extralight">ge</span
+              ><span class=" font-bold">ts</span> 
+              <span class="text-xs italic font-bold text-red-900">We serve the best...</span>
+        </h1>
+        <img src="/project/Images/forsale.webp" class="mt-3" alt="">
+        <div class="text-center text-sm text-red-900 mt-3">
+        <h1 class="italic text-xs font-bold">Shopping From us is safe!.. </h1>
+        </div>
+      </div>
+
+      <div class=" rounded-sm  w-[420px]  mt-3 scroll">
+          <div class="bg-red-900 text-white p-4">
+            <h1 class=" flex justify-center items-center font-semibold text-md text-white ">Ordered Items</h1>
+          </div>
+          <div class="flex-col">
+            <div id="display" class="bg-white px-8">
+          </div>
+          <div  class="w-[450px] mt-3 p-4 bg-red-900  flex justify-center items-center text-white text-xl">
+            <div id="disp"></div>
+          </div>
+      </div>
+
+      </div>
+    </div>
+    
+
+    <section id="service" class="footer h-22 w-100 bg-DullBlue text-white mt-8">
+      <div class="mx-6 flex flex-col justify-center">
+          <div class=" my-3 flex flex-row justify-center space-x-16 text-sm">
+              <i class="fa-brands fa-instagram text-3xl font-thin hover"></i>
+              <i class="fa-brands fa-facebook text-3xl font-thin t"></i>
+              <i class="fa-brands fa-x-twitter text-3xl font-thin x"></i>
+              <i class="fa-brands fa-whatsapp text-3xl font-thin w"></i>
+              <i class="fa-brands fa-telegram text-3xl font-thin t"></i>
+          </div>
+
+          <div class="flex justify-between  items-center">
+              <ul class="flex space-x-4 text-xs font-semi-bold">
+                  <li>Work</li>
+                  <li>Career</li>
+                  <li>Story</li>
+              </ul>
+      
+              <h1 class="text-2xl">
+               <span class="font-bold content- text-sm">Twel</span><span class="text-goldenYellow  text-sm font-bold">ve.</span><span class="text-xs font-bold">02</span>
+              </h1>
+
+              <ul class="flex space-x-4 text-xs font-semi-bold">
+                  <li class="text-center">Contact Us</li>
+                  <li>Service</li>
+              </ul>
+          </div>
+      </div>
+  </section>
+</body>
+</html>
+
+<script>
+
+  // iphone
+function phoneProduct() {
+  window.location.href = "iphone.html"
+}
+// airpod
+function appleProduct() {
+ window.location.href = "airpod.html"
+}
+//  ipad
+function ipadProduct() {
+ window.location.href = "ipad.html"
+}
+//  mac
+function macBook() {
+ window.location.href = "macbook.html"
+}
+//  laptop
+function lapTops() {
+ window.location.href = "laptop.html"
+}
+function showCarts() {
+ window.location.href = "cart.html"
+}
+//  samsung
+function samSung() {
+ window.location.href = "samSung.html"
+}
+
+function menuBtn (e){
+  let list = document.querySelector('ul');
+
+ 
+  e.name === "menu-outline" ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : ( e.name = "menu-outline",list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'));
+}
+
+//itemsGotten from the localStorage
+  var itemGotten = JSON.parse(localStorage.getItem("cart"));
+  console.log(itemGotten);
+  itemGotten.map((item, index) =>{
+    display.innerHTML +=`
+    <div class="py-2 flex justify-between items-center max-h-[450px]">
+      <img class="w-[60px] h-[60px] object-cover rounded-[5px]" src="${item.image}" alt="">
+      <div class="pl-[15px]">
+        <h1 class="text-sm font-semibold">${item.name}</h1>
+        <h1 class="text-xs font-semibold">$${item.price}</h1>
+      </div>
+    </div>
+    <div class="flex items-center ml-10">
+      <ion-icon  class=" text-red-600 px-5 text-2xl" name="trash-outline" onclick="deleteBtn(${index})"></ion-icon>
+    </div>
+  </div>
+    <hr>
+    `
+  })
+  disp.innerHTML += `
+    <h1 class=" text-center font-semibold">Total : $ ${itemGotten.reduce((acc, item) => acc + parseInt(item.price), 0)}.00</h1>
+   `
+
+//CODE FOR DELETE BUTTON
+  function deleteBtn (index){
+    console.log(index)
+    itemGotten.splice(index,1);
+    localStorage.setItem("cart", JSON.stringify(itemGotten));
+    location.reload();
+}
+  
+  console.log(parseInt(itemGotten[index].price))
+</script>
+
+
+  
+
+      <!-- disp.innerHTML += `<div>
+      <h1 class="text-lg">Total : $ ${itemGotten.reduce((acc, item) => acc + parseInt(item.price), 0)}.00</h1>
+      </div>}` -->
+
+
+    

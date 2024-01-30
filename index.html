@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="phone.css">
+<script src="script.js"></script>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<script>
+  tailwind.config = {
+    theme: {
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
+      },
+      extend: {
+        colors: {
+          brightRed: "hsl(12, 88%, 59%)",
+          brightRedLight: "hsl(12, 88%, 69%)",
+          Blue: "hsl(210, 78%, 56%)",
+          goldenYellow: "#F5A201",
+          DullBlue: "#0A223C",
+          Deepblue: "#264653",
+          brightGold: "#F5C412",
+          sky: "#082f49",
+          coral: "#C99D9A",
+          lightgreen: "#A5DAD4",
+          ash: "#8694AB",
+        },
+      },
+    },
+  };
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<body class="bg-gray-50">
+
+    <section class="bg-sky text-white">
+         <div class="mx-6 md:flex md:items-center md:justify-between p-3">
+            <div class="flex justify-between items-center">
+              <h1 class="text-3xl cursor-pointer">
+                <span class="font-bold content-center">Twel</span
+                ><span class="text-goldenYellow font-extralight">ve.</span
+                ><span class="text-xs font-bold">02</span>
+              </h1>
+              <span>
+                <ion-icon name="menu-outline" class=" ml-3 text-4xl cursor-pointer md:hidden" onclick="menuBtn(this)"></ion-icon>
+              </span>
+            </div>
+
+            <ul class="md:flex md:items-center text-xs font-semi-bold z-[-1] md:z-auto md:static  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-duration-500">
+
+              <li class="mx-4 my-6 md:my-0 cursor-pointer" type="button" onclick="nowAvail()">
+                Now Available <span> <i class="arrow down"></i></span>
+              </li>
+          
+              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="phoneProduct()">
+                iPhone <span> <i class="arrow down"></i></span>
+              </li>
+          
+              <li class="cursor-pointer mx-4 my-6 md:my-0" onclick="ipadProduct()">
+                iPad <span> <i class="arrow down"></i></span>
+              </li>
+        
+          
+              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="appleProduct()">
+                AirPods & Apple Watch <span><i class="arrow down"></i></span>
+              </li>
+    
+              <li class="mx-4 my-6 md:my-0 cursor-pointer" onclick="macBook()">
+                Mac Books<span> <i class="arrow down"></i></span>
+              </li>
+           
+              <li class="mx-4 cursor-pointer my-6 md:my-0" onclick="samSung()">
+                Samsung <span> <i class="arrow down"></i></span>
+              </li>
+            
+              <li class="mx-4 cursor-pointer my-6 md:my-0" onclick="lapTops()">
+                Laptops <span> <i class="arrow down"></i></span>
+              </li>
+             
+        
+              <li class="mx-4 cursor-pointer my-6 md:my-0">
+                <a href="#service">
+                  Services <span> <i class="arrow down"></i></span>
+                </a>
+              </li>
+
+              <button
+                class=" mx-8 h-10 px-5 text-xs cursor-pointer rounded-md border border-sky text-sky font-semibold bg-goldenYellow hover:bg-white hover:text-black my-4 md:my-0"
+                type="button">
+                Become a Seller
+              </button>
+         </ul>
+      </div>
+   </section>
+
+
+   
+    <section class="px-20">
+      <div
+        class="h-auto bg-gray-100 w-100 mt-8 rounded-xl md:flex flex-row justify-between sket"
+       >
+        <div class="px-10 pt-12">
+          <h1 class="md:text-2xl text-left lg:text-3xl font-semibold text-sky">
+            Your Trusted Gadgets <br />
+            Device Partner
+          </h1>
+          <p class="mt-4 text-xs font-light md:text-left">
+            Life is too short to own boring gadgets. Let us help you make your life more interesting with trendy,
+            <br />
+            cutting-edge technology from a  trusted brand you can trust.
+            <br />
+            having gadgets saves you from a lot of bullshit bruh! Get One Here, Now!!!
+          </p>
+
+          <button
+            class="h-10 px-14 mr-5 mt-8 text-xs rounded-md text-sky font-semibold bg-goldenYellow sm:content-center"
+            type="button"
+          >
+            Shop Now
+          </button>
+          <p class="mt-5 font-light italic text-xs text-sky">
+            Get your hands on our latest devices...
+          </p>
+        </div>
+
+        <div class="w-">
+          <img class="rounded-md logo object-fit" src="/project/Images/wallpaper.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-20 ">
+      <div class="h-100 w-100 mt-8 md:flex justify-evenly ms-24 lg:ms-0">
+        <div class="try rounded-md bg-coral p-5 md:flex justify-between">
+          <div class="ml-3">
+            <button
+              class="h-8 px-6 py-2 md:mt-14 md:ml-10 text-xs rounded-md bg-lightgreen color-DullBlue font-bold"
+            >
+              NEW RELEASED
+            </button>
+            <h1 class="mt-6 text-sm font-semibold text-DullBlue">
+              Apple Latest Phone<br />
+              Series
+            </h1>
+            <p class="mt-4 text-3xl md:text-5xl font-bold text-DullBlue">
+              iPhone 15<span class="text-gray-200">Pro</span>
+            </p>
+            <p class="mt-2 text-xs font-bold italic text-DullBlue">
+              Shop for an iPhone Gadgets...
+            </p>
+            <button
+              class="h-8 px-10 py-2 mt-10 md:ml-10 text-xs text-white rounded-md bg-brightRed font-semibold"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <img
+            class="ml-8 object-fit w-94"
+            src="/project/Images/iphone15.png"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <div
+            class="h-56 w-96 rounded-md bg-ash py-6 px-5 flex justify-evenly"
+          >
+            <div class="">
+              <button
+                class="h-7 px-6 text-xs text-DullBlue rounded-md bg-gray-100 font-bold"
+              >
+                ACCESSORIES
+              </button>
+              <h1 class="mt-2 text-sm font-bold text-DullBlue">
+                Apple Earphone <br />
+                Series
+              </h1>
+              <p class="font-bold text-DullBlue text-2xl">
+                Earphone-<span class="text-gray-200">Max</span>
+              </p>
+              <button
+                class="h-7 px-6 text-xs mt-2 text-white rounded-md bg-brightRed font-semibold"
+              >
+                Explore
+              </button>
+            </div>
+            <div class="translate-y- skew-x-3 ml-5">
+              <img src="/project/Images/earphone1.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="h-56 w-96 border border-sky mt-4 rounded-md bg-DullBlue flex jusitfy-evenly py-6 px-5"
+          >
+            <div class="px-2">
+              <button
+                class="h-7 px-6 text-xs rounded-md bg-lightgreen color-DullBlue font-bold"
+              >
+                LATEST
+              </button>
+              <h1 class="mt-3 text-sm font-bold text-gray-200">
+                Apple Airpods <br />
+                Series
+              </h1>
+              <p class="font-bold text-2xl text-gray-200">
+                Airpod- <span class="text-goldenYellow">3Pro</span>
+              </p>
+              <button
+                class="h-7 px-6 text-xs mt-2 text-white rounded-md bg-brightRed font-semibold"
+              >
+                Explore
+              </button>
+            </div>
+
+            <div class="translate-y-0 skew-x-3 ml-3">
+              <img src="/project/Images/airpod1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="mt-5 bg-white lg:text-center">
+      <div
+        class="grid lg:grid-cols-6 grid-cols-2 py-6 text-sm font-extrabold  ms-32 lg:ms-0"
+      >
+      <div class="lg:ms-0 ms-10">
+        <img class="w-[55%]  mt-3 lg:mt-6 lg:ms-10" src="/project/Images/macbook2.jpg" alt="" />
+        <p class="lg:ms-0 ms-[43px] mt-5">Shop Mac</p>
+      </div>
+        <div>
+          <img class="w-20 mt-3 lg:mt-0  lg:ms-20" src="/project/Images/iphone3.jpg" alt="" />
+          <p class="mt-5">Shop iPhone</p>
+        </div>
+        <div class="lg:ms-0 ms-20">
+          <img class="w-[35%] mt-3 lg:mt-0  lg:ms-20" src="/project/Images/earphone2.png" alt="" />
+          <p class="mt-5 ">Shop Earphone</p>
+        </div>
+        <div>
+          <img class="w-20 mt-3 lg:mt-0  lg:ms-20" src="/project/Images/ipad1.jpg" alt="" />
+          <p class="mt-5">Shop iPad</p>
+        </div>
+        <div class="lg:ms-0 ms-20">
+          <img class="w-20 mt-3 lg:mt-0  lg:ms-20" src="/project/Images/watch1.jpg" alt="" />
+          <p class="mt-5">Shop Watch</p>
+        </div>
+        <div >
+          <img class="w-20 mt-3 lg:mt-0  lg:ms-20" src="/project/Images/iphone3.jpg" alt="" />
+          <p class="mt-5">Shop iPhone</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="tye">
+      <div class="bg-sky flex flex-row justify-between items-center h-14">
+        <p class="p-2 mx-6 font-semibold text-white">
+          Shop Our Samsung and Hp Device
+        </p>
+        <button
+          class="h-8 px-7 p-2 mx-6 text-xs rounded-sm border border-sky text-sky font-semibold bg-goldenYellow"
+          type="button"
+        >
+          See More
+        </button>
+      </div>
+
+      <div class=" lg:flex mt-10 justify-center py-6">
+        <div class="till mr-5 flex flex-col justify-center items-center rounded-lg ms-52 lg:ms-0 ">
+          <div class="text-center">
+            <h1 class="text-2xl font-bold text-gray-50">Samsung Smart Phone</h1>
+            <p class="mt-1 text-lg font-extrabold text-gray-50">Samsung S10+</p>
+            <p class="mt-2 font-extrabold text-red-600 text-sm">
+              Price: $1,378.00
+            </p>
+          </div>
+          <div class="mt-10">
+            <img class="w-100" src="/project/Images/samsung3.png" alt="" />
+          </div>
+
+          <button
+            class="h-8 px-10 py-2 mt-3 text-xs text-white rounded-md bg-coral font-semibold"
+          >
+            Shop Now
+          </button>
+        </div>
+
+        <div class="till flex flex-col justify-center items-center rounded-lg lg:mt-0 mt-10  ms-52 lg:ms-0">
+          <div class="text-center">
+            <h1 class="text-2xl font-bold text-gray-100">Hp Smart Laptop</h1>
+            <p class="mt-1 text-lg font-extrabold text-gray-100">Hp Core i7</p>
+            <p class="mt-2 font-extrabold text-red-600 text-sm">
+              Price: $1,068.00
+            </p>
+          </div>
+
+          <div class="mt-8">
+            <img class="w-100" src="/project/Images/hp1.png" alt="" />
+          </div>
+
+          <button
+            class="h-8 px-10 py-2 mt-6 text-xs text-white rounded-md bg-brightRed font-semibold"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="cruise" >
+      <div class="products ">
+        <div class="bg-white">
+          <p class="p-2 mx-6 text-DullBlue font-extrabold">
+            Overview of what We Sell
+          </p>
+        </div>
+
+        <div class="flex flex-col py-6  ms-20 lg:ms-0">
+          <div class="grid lg:grid-cols-5 grid-cols-2 lg:ms-10 mt-10">
+            <div class="box bg-white rounded-md drop-shadow-lg lg:mr-12 ">
+              <div class="flex justify-center bg-gray-100 h-32">
+                <img class="w-" src="/project/Images/pad.png" alt="" />
+              </div>
+              <div class="p-3">
+                <div class="flex mt-3 items-center">
+                  <p class="font-bold mr-14">GAME PAD Pro <br />234</p>
+                  <i class="fa-solid fa-heart text-red-500"></i>
+                </div>
+                <div class="mt-1">
+                  <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                  <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                  <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                  <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke text-goldenYellow text-sm"
+                  ></i>
+                </div>
+
+                <p class="text-xs font-light">
+                  <span class="font-semibold mr-1">4.5</span> (1.2k Reviews)
+                </p>
+              </div>
+              <div class="flex justify-between mt-2 items-center px-3">
+                <p class="text-sm font-semibold text-DullBlue">$58.99</p>
+                <button
+                  class="h-8 px-7 bg-DullBlue text-xs text-goldenYellow font-semibold"
+                >
+                  HOT
+                </button>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img class="w" src="/project/Images/tecnos20.png" alt="" />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">Tecno Andriod <br />camon 20</p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-goldenYellow text-sm"
+                    ></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">4.9</span> (3.5k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$120.97</p>
+                  <button
+                    class="h-8 px-7 bg-goldenYellow text-xs text-DullBlue font-semibold"
+                  >
+                    HOT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box lg:mt-0 mt-8">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img class="w-34" src="/project/Images/airpod2.png" alt="" />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">Apple Airpod<br />Airpod 3Pro</p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">5.0</span> (5.5k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$180.00</p>
+                  <button
+                    class="h-8 px-7 bg-DullBlue text-xs text-goldenYellow font-semibold"
+                  >
+                    NEW
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box lg:mt-0 mt-8">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img class="w" src="/project/Images/iphone14.png" alt="" />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">Apple iPhone <br />Iphone 14</p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-goldenYellow text-sm"
+                    ></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">4.3</span> (10k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$1, 320</p>
+                  <button
+                    class="h-8 px-7 bg-goldenYellow text-xs text-DullBlue font-semibold"
+                  >
+                    HOT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box lg:mt-0 mt-8">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img class="w-34" src="/project/Images/charger.png" alt="" />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">Apple Series<br />iPhone Charger</p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-goldenYellow text-sm"
+                    ></i>
+                    <i class="fa-regular fa-star text-goldenYellow text-sm"></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">3.5</span> (1.1k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$35.00</p>
+                  <button
+                    class="h-8 px-7 bg-DullBlue text-xs text-goldenYellow font-semibold"
+                  >
+                  NEW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid lg:grid-cols-5 grid-cols-2 lg:ms-10 mt-10">
+            <div class="box">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img class="w" src="/project/Images/iphone15.png" alt="" />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">
+                      Apple iPhone <br />Iphone 15Pro
+                    </p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">5.0</span> (70k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$1, 770</p>
+                  <button
+                    class="h-8 px-7 bg-goldenYellow text-xs text-DullBlue font-semibold"
+                  >
+                    LATEST
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img
+                    class="w-34"
+                    src="/project/Images/earphonee.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">
+                      Apple Series<br />Earphone max
+                    </p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-regular fa-star text-goldenYellow text-sm"></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">4.6</span> (2.1k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$88.00</p>
+                  <button
+                    class="h-8 px-7 bg-DullBlue text-xs text-goldenYellow font-semibold"
+                  >
+                  HOT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box lg:mt-0 mt-8">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img class="w" src="/project/Images/hpe.png" alt="" />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">Hp Laptop New<br />Hp Elite</p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">4.5</span> (2.5k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$650.98</p>
+                  <button
+                    class="h-8 px-7 bg-goldenYellow text-xs text-DullBlue font-semibold"
+                  >
+                    HOT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box lg:mt-0 mt-8">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img class="w-34" src="/project/Images/iwactch1.png" alt="" />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">Apple Series<br />Apple iWatch</p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-regular fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-regular fa-star text-goldenYellow text-sm"></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">3.0</span> (1k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$188.00</p>
+                  <button
+                    class="h-8 px-7 bg-DullBlue text-xs text-goldenYellow font-semibold"
+                  >
+                    NEW
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box lg:mt-0 mt-8">
+              <div class="box bg-white rounded-md drop-shadow-lg">
+                <div class="flex justify-center bg-gray-100 h-32">
+                  <img class="w" src="/project/Images/s22.png" alt="" />
+                </div>
+                <div class="p-3">
+                  <div class="flex mt-3 items-center">
+                    <p class="font-bold mr-14">Samsung New<br />s22</p>
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                  </div>
+                  <div class="mt-1">
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                    <i class="fa-solid fa-star text-goldenYellow text-sm"></i>
+                  </div>
+
+                  <p class="text-xs font-light">
+                    <span class="font-semibold mr-1">5.0</span> (120k Reviews)
+                  </p>
+                </div>
+                <div class="flex justify-between mt-2 items-center px-3">
+                  <p class="text-sm font-semibold text-DullBlue">$2,320</p>
+                  <button
+                    class="h-8 px-7 bg-goldenYellow text-xs text-DullBlue font-semibold"
+                  >
+                    LATEST
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="mt-5 bg-white lg:text-center">
+      <div
+        class="grid lg:grid-cols-6 grid-cols-2 py-6 text-sm font-extrabold ms-24 lg:ms-0"
+      >
+        <div class="lg:ms-0 ms-10">
+          <img class="w-[55%]  mt-3 lg:mt-6 lg:ms-10" src="/project/Images/macbook2.jpg" alt="" />
+          <p class="lg:ms-0 ms-[43px] mt-5">Shop Mac</p>
+        </div>
+        <div>
+          <img class="w-20 mt-3 lg:mt-0  lg:ms-20" src="/project/Images/iphone3.jpg" alt="" />
+          <p class="mt-5">Shop iPhone</p>
+        </div>
+        <div class="lg:ms-0 ms-20">
+          <img class="w-[35%] mt-3 lg:mt-0  lg:ms-20" src="/project/Images/earphone2.png" alt="" />
+          <p class="mt-5 ">Shop Earphone</p>
+        </div>
+        <div>
+          <img class="w-20 mt-3 lg:mt-0  lg:ms-20" src="/project/Images/ipad1.jpg" alt="" />
+          <p class="mt-5">Shop iPad</p>
+        </div>
+        <div class="lg:ms-0 ms-20">
+          <img class="w-20 mt-3 lg:mt-0  lg:ms-20" src="/project/Images/watch1.jpg" alt="" />
+          <p class="mt-5">Shop Watch</p>
+        </div>
+        <div >
+          <img class="w-20 mt-3 lg:mt-0  lg:ms-20" src="/project/Images/iphone3.jpg" alt="" />
+          <p class="mt-5">Shop iPhone</p>
+        </div>
+      </div>
+    </div>
+
+        <section id="service" class="footer h-22 w-100 bg-DullBlue text-white mt-8">
+            <div class="mx-6 flex flex-col justify-center">
+                <div class=" my-3 flex flex-row justify-center space-x-16 text-sm">
+                    <i class="fa-brands fa-instagram text-3xl font-thin hover"></i>
+                    <i class="fa-brands fa-facebook text-3xl font-thin t"></i>
+                    <i class="fa-brands fa-x-twitter text-3xl font-thin x"></i>
+                    <i class="fa-brands fa-whatsapp text-3xl font-thin w"></i>
+                    <i class="fa-brands fa-telegram text-3xl font-thin t"></i>
+                </div>
+
+                <div class="flex justify-between  items-center">
+                    <ul class="flex space-x-4 text-xs font-semi-bold">
+                        <li>Work</li>
+                        <li>Career</li>
+                        <li>Story</li>
+                    </ul>
+            
+                    <h1 class="text-2xl">
+                     <span class="font-bold content- text-sm">Twel</span><span class="text-goldenYellow  text-sm font-bold">ve.</span><span class="text-xs font-bold">02</span>
+                    </h1>
+
+                    <ul class="flex space-x-4 text-xs font-semi-bold">
+                        <li class="text-center">Contact Us</li>
+                        <li>Service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+  </body>
+</html>

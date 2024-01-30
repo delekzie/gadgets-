@@ -1,0 +1,17 @@
+
+
+@media screen and (max-width: 768px){
+    .try{
+      width: 400px;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  
+    }
+    .sket {
+        width: 100%;
+      }
+  }

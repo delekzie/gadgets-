@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,500;1,6..12,200;1,6..12,400&family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* scroll-behavior: smooth; */
+}
+.try{
+  width: 698px;
+  height: auto;
+}
+.scroll{
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+  height: 65vh;
+}
+.scroll::-webkit-scrollbar{
+  /* display: none; */
+  /* width: 10px;
+  height: 0px; */
+  background-color: rgba(0, 0, 0, 0.244)
+}
+.scroll::-webkit-scrollbar-thumb{
+  height: 0px;
+  width: 2px !important;
+  background-color: #7F1D1D;
+  border-radius: 5px;
+}
+/* .scroll::-webkit-scrollbar- */
+.hover:hover{
+    color: rgb(255, 0, 153)
+}
+.x:hover{
+  color:black
+}
+.w:hover{
+  color:rgb(65, 141, 2)
+}
+.t:hover{
+  color: rgb(25, 81, 212)
+}
+.tye{
+  background-image: url(/project/Images/forsale.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.till{
+  height: 430px;
+  width: 380px;
+  background-color: #222;
+}
+.till:hover{
+  transform: scale(1.1);
+  transition: all .5s ease-in-out; 
+}
+.logo{
+  width: 500px;
+  object-fit: cover;
+}
+
+#show{
+  display: flex;
+  flex-wrap: wrap;
+}
+#display{
+  display: flex;
+  flex-wrap: wrap;
+}
+#laptop{
+  display: flex;
+  flex-wrap: wrap;
+}
+#disp{
+  display: flex;
+  flex-wrap: wrap;
+}
+.box{
+  height: 315px;
+  width: 220px;
+
+}
+.box:hover{
+  transform: scale(1.1);
+  transition: all .5s ease-in-out; 
+}
+.box2{
+  margin-top: 40px;
+  height: 315px;
+  width: 220px;
+  
+}
+.box2:hover{
+  transform: scale(1.1);
+  transition: all .5s ease-in-out; 
+}
+.eig{
+  height: 315px;
+  width: 720px;
+}
+.arrow{
+    border: solid #FFF;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-left: 3px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    
+  }
+  
